@@ -1,0 +1,8 @@
+{
+  "radiologyeducation.mayo.edu": {
+    "menu_selector": "#course-nav-menu",
+    "nav_selector": "#course-nav-tabs",
+    "select_tab": ["Faculty", "Credit", "Registration", "Lodging/Travel"],
+    "content_selector": "#course-content-holder"
+  }
+}

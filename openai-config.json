@@ -1,0 +1,37 @@
+{
+  "apiKey": "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",
+  "model": "gpt-3.5-turbo-1106",
+  "tokens": {
+    "gpt-3.5-turbo-1106": 16384
+  },
+  "schema": {
+    "location": "string",
+    "conference_name": "string",
+    "start_date": "string",
+    "end_date": "string",
+    "cme_provider": "string",
+    "cme_credit": "string",
+    "description": "string",
+    "instructors": "string[]",
+    "price": "string"
+  },
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "get_html_content",
+        "description": "Get html content with a given file name",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "file_name": {
+              "type": "string",
+              "description": "The html file name"
+            }
+          },
+          "require": ["file_name"]
+        }
+      }
+    }
+  ]
+}
